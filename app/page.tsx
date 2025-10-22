@@ -13,7 +13,7 @@ export default function HomePage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/hero-1.png"
+            src="/hero-one.png"
             alt="Voice of Africa Hero"
             className="w-full h-full object-cover"
           />

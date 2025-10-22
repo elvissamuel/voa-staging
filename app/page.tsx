@@ -45,7 +45,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <img src="/about-us.png" alt="Meeting Discussion" className="w-full h-auto rounded-3xl" />
+              <img src="/about.png" alt="Meeting Discussion" className="w-full h-auto rounded-3xl" />
             </div>
             <div>
               <p className="text-[#E0B500] font-semibold text-sm mb-4">WELCOME TO VOICE OF AFRICA</p>
@@ -98,7 +98,7 @@ export default function HomePage() {
               </a>
             </div>
             <div>
-              <img src="/hero-2.png" alt="Professional Meeting" className="w-full h-auto rounded-3xl" />
+              <img src="/hero-two.png" alt="Professional Meeting" className="w-full h-auto rounded-3xl" />
             </div>
           </div>
         </div>

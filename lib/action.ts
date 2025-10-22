@@ -2,7 +2,7 @@
 
 // import { ParticipantProps } from "@/lib/models"
 import { sendRawMail } from "@/lib/send-mail-api"
-import { getIMCResponseEmailTemplate } from "@/lib/email-template"
+import { getConferenceRegistrationEmailTemplate } from "@/lib/email-template"
 
 // Production script
 const googleScriptURL = "https://script.google.com/macros/s/AKfycbx0f-Z-pOA1050tKM2ZIdegq9rg5u4AU2YvftqQUzGqsiGgOK-qViVJ-jnhBItFyH-q/exec"

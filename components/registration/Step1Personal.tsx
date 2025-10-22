@@ -15,20 +15,20 @@ export default function Step1Personal({ formData, errors, onChange }: Props) {
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
-          <Label htmlFor="firstName" className="text-lg">First Name / Prénom *</Label>
+          <Label htmlFor="firstName" className="text-base">First Name / Prénom *</Label>
           <Input id="firstName" value={formData.firstName} onChange={(e) => onChange('firstName', e.target.value)} placeholder="Your given name as you'd like it to appear on your badge" />
           {errors.firstName && <p className="text-base text-destructive">{errors.firstName}</p>}
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="lastName" className="text-lg">Last Name / Nom *</Label>
+          <Label htmlFor="lastName" className="text-base">Last Name / Nom *</Label>
           <Input id="lastName" value={formData.lastName} onChange={(e) => onChange('lastName', e.target.value)} placeholder="Your surname or family name" />
           {errors.lastName && <p className="text-base text-destructive">{errors.lastName}</p>}
         </div>
       </div>
 
       <div className="space-y-2">
-        <Label className="text-lg">Gender / Genre *</Label>
+        <Label className="text-base">Gender / Genre *</Label>
         <Select value={formData.gender} onValueChange={(value) => onChange('gender', value)}>
           <SelectTrigger>
             <SelectValue placeholder="Select gender" />

@@ -16,8 +16,8 @@ import {
 } from '@/components/ui/select'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
-import { addRegistration } from '@/lib/action'
 import { uploadToCloudinary } from '@/lib/cloudinary'
+import { addConferenceRegistration } from '@/lib/api-calls'
 import Step1Personal from '@/components/registration/Step1Personal'
 import Step2Participation from '@/components/registration/Step2Participation'
 import Step3Background from '@/components/registration/Step3Background'
@@ -98,7 +98,6 @@ export default function ConferenceRegistrationForm() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [isUploadingPhoto, setIsUploadingPhoto] = useState(false)
   const [uploadProgress, setUploadProgress] = useState('')
-  // Using the addRegistration function from lib/action.ts instead of direct URL
 
   // Wizard state
   const [currentStep, setCurrentStep] = useState<number>(1)
@@ -255,19 +254,38 @@ export default function ConferenceRegistrationForm() {
       }
 
       // Log the data being sent for debugging
-      console.log('Data being sent to Google Apps Script:', submissionData)
+      console.log('Data being sent to API:', submissionData)
       console.log('Data size:', JSON.stringify(submissionData).length, 'characters')
 
-      const res = await addRegistration(submissionData)
-      console.log('Response from addRegistration:', res)
+      const { data, error, validationErrors } = await addConferenceRegistration(submissionData)
+      console.log('Response from API:', { data, error, validationErrors })
 
-      if (res.successMessage) {
+      if (validationErrors?.length) {
+        // Handle validation errors
+        const newErrors: Record<string, string> = {}
+        validationErrors.forEach(validationError => {
+          newErrors[validationError.field] = validationError.message
+        })
+        setErrors(newErrors)
+        return
+      }
+
+      if (error) {
+        console.log("response error: ", error.message)
+        if (error.message === "A registration with this email already exists") {
+          setErrors({ email: "A registration with this email already exists" })
+          return
+        }
+
+        throw new Error(error.message || 'Failed to submit registration.')
+      }
+
+      if (data) {
         setSubmitStatus('success')
         // Reset form after successful submission
         setFormData(initialFormData)
         setErrors({})
-      } else {
-        throw new Error(res.errorMessage || 'Unknown error occurred')
+        console.log('Registration successful with code:', data.registrationCode)
       }
 
       

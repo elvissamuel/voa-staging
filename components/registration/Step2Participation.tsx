@@ -13,7 +13,7 @@ export default function Step2Participation({ formData, errors, onChange }: Props
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <Label className="text-lg">Are you joining us from outside Nigeria / Participez-vous depuis l'extérieur du Nigeria *</Label>
+        <Label className="text-base">Are you joining us from outside Nigeria / Participez-vous depuis l'extérieur du Nigeria *</Label>
         <Select value={formData.joiningFromOutsideNigeria} onValueChange={(value) => onChange('joiningFromOutsideNigeria', value)}>
           <SelectTrigger>
             <SelectValue placeholder="Select option" />
@@ -27,7 +27,7 @@ export default function Step2Participation({ formData, errors, onChange }: Props
       </div>
 
       <div className="space-y-2">
-        <Label className="text-lg">How will you attend Day 1 / Comment participerez-vous à la Journée 1 *</Label>
+        <Label className="text-base">How will you attend Day 1 / Comment participerez-vous à la Journée 1 *</Label>
         <Select value={formData.day1Attendance} onValueChange={(value) => onChange('day1Attendance', value)}>
           <SelectTrigger>
             <SelectValue placeholder="Select attendance option" />
@@ -42,7 +42,7 @@ export default function Step2Participation({ formData, errors, onChange }: Props
       </div>
 
       <div className="space-y-2">
-        <Label className="text-lg">How will you attend Day 2 / Comment participerez-vous à la Journée 2 *</Label>
+        <Label className="text-base">How will you attend Day 2 / Comment participerez-vous à la Journée 2 *</Label>
         <Select value={formData.day2Attendance} onValueChange={(value) => onChange('day2Attendance', value)}>
           <SelectTrigger>
             <SelectValue placeholder="Select attendance option" />

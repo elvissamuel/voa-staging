@@ -31,12 +31,12 @@ export default function Step4Intentions({ formData, errors, onChange, onArrayCha
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
-          <Label className="text-lg">What Category do you belong / À quelle catégorie appartenez-vous *</Label>
+          <Label className="text-sm">What Category do you belong / À quelle catégorie appartenez-vous *</Label>
           <Select value={formData.category} onValueChange={(value) => onChange('category', value)}>
             <SelectTrigger>
               <SelectValue placeholder="Select category" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className='text-sm'>
               <SelectItem value="professional">Professional / Professionnel</SelectItem>
               <SelectItem value="student">Student / Étudiant</SelectItem>
               <SelectItem value="academic">Academic / Universitaire</SelectItem>
@@ -50,7 +50,7 @@ export default function Step4Intentions({ formData, errors, onChange, onArrayCha
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="professionalBackground">Professional Background / Expérience professionnelle *</Label>
+          <Label className='text-sm' htmlFor="professionalBackground">Professional Background / Expérience professionnelle *</Label>
           <Textarea id="professionalBackground" value={formData.professionalBackground} onChange={(e) => onChange('professionalBackground', e.target.value)} rows={3} />
           {errors.professionalBackground && <p className="text-base text-destructive">{errors.professionalBackground}</p>}
         </div>
@@ -62,7 +62,7 @@ export default function Step4Intentions({ formData, errors, onChange, onArrayCha
           {reasons.map((reason) => (
             <div key={reason} className="flex items-start space-x-2">
               <Checkbox id={`reason-${reason}`} checked={formData.reasonsForAttending.includes(reason)} onCheckedChange={(checked) => onArrayChange('reasonsForAttending', reason, checked as boolean)} />
-              <Label htmlFor={`reason-${reason}`} className="text-base leading-relaxed">{reason}</Label>
+              <Label htmlFor={`reason-${reason}`} className="text-sm leading-relaxed">{reason}</Label>
             </div>
           ))}
         </div>
@@ -99,7 +99,7 @@ export default function Step4Intentions({ formData, errors, onChange, onArrayCha
           {engagements.map((engagement) => (
             <div key={engagement} className="flex items-center space-x-2">
               <Checkbox id={`engagement-${engagement}`} checked={formData.futureEngagement.includes(engagement)} onCheckedChange={(checked) => onArrayChange('futureEngagement', engagement, checked as boolean)} />
-              <Label htmlFor={`engagement-${engagement}`} className="text-lg">{engagement}</Label>
+              <Label htmlFor={`engagement-${engagement}`} className="text-sm">{engagement}</Label>
             </div>
           ))}
         </div>

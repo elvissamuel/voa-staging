@@ -1,0 +1,62 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ConferenceRegistration {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Section 1: Personal Information
+  firstName           String
+  lastName            String
+  email               String  @unique
+  gender              String
+  phoneNumber         String
+  countryOfResidence  String
+  location            String
+  ageRange            String
+
+  // Section 2: Conference Participation
+  joiningFromOutsideNigeria String
+  day1Attendance            String
+  day2Attendance            String
+
+  // Section 3: Background & Interests
+  currentRole         String
+  seniorityLevel      String
+  organizationName    String
+  sector              String  // Comma-separated values
+  areasOfInterest     String  // Comma-separated values
+  languagesSpoken     String  // Comma-separated values
+  socialMediaHandle   String?
+
+  // Section 4: Intentions, Access & Engagement
+  category                String
+  professionalBackground  String
+  reasonsForAttending     String  // Comma-separated values
+  howDidYouHear           String
+  accessibilityNeeds      String?
+  futureEngagement        String  // Comma-separated values
+
+  // Section 5: Consent
+  consent Boolean
+
+  // Profile Photo Information
+  profilePhotoUrl     String?
+  profilePhotoPublicId String?
+  profilePhotoName    String?
+
+  // Submission timestamp
+  submittedAt DateTime
+
+  @@map("conference_registrations")
+}

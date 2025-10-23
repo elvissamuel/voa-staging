@@ -32,9 +32,30 @@ CREATE TABLE "conference_registrations" (
     "profilePhotoPublicId" TEXT,
     "profilePhotoName" TEXT,
     "submittedAt" TIMESTAMP(3) NOT NULL,
+    "registrationCode" TEXT NOT NULL,
 
     CONSTRAINT "conference_registrations_pkey" PRIMARY KEY ("id")
 );
 
+-- CreateTable
+CREATE TABLE "admins" (
+    "id" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+    "email" TEXT NOT NULL,
+    "password" TEXT NOT NULL,
+    "firstName" TEXT,
+    "lastName" TEXT,
+    "role" TEXT NOT NULL DEFAULT 'admin',
+
+    CONSTRAINT "admins_pkey" PRIMARY KEY ("id")
+);
+
 -- CreateIndex
 CREATE UNIQUE INDEX "conference_registrations_email_key" ON "conference_registrations"("email");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "conference_registrations_registrationCode_key" ON "conference_registrations"("registrationCode");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "admins_email_key" ON "admins"("email");

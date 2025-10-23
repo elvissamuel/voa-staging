@@ -7,7 +7,7 @@ export const getConferenceRegistrationEmailTemplate = (user: any, registrationCo
         <tr>
           <td style="text-align: center; padding: 20px 0;">
             <img
-              src="/narrative.png"
+              src="https://res.cloudinary.com/dws9ykgky/image/upload/v1761197052/voa-logo_krlrgv.png"
               alt="Africa Conference 2025"
               width="400"
               height="auto"

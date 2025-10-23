@@ -109,7 +109,10 @@ export async function POST(req: NextRequest) {
           profilePhotoName: profilePhotoName || null,
 
           // Submission timestamp
-          submittedAt: new Date(submittedAt)
+          submittedAt: new Date(submittedAt),
+
+          // Registration code
+          registrationCode
         },
       });
 

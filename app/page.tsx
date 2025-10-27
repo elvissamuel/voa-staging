@@ -112,7 +112,7 @@ export default function HomePage() {
             <h2 className="text-5xl text-[#053849] font-bold mb-4">This Is More Than A Platform. It's A Network</h2>
             <p className="text-sm">Voice of Africa is a declaration. A platform for trailblazers, creators and innovators who are defining the continent on their own terms</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {/* <Card className="p-8 flex flex-col h-full justify-between">
               <div>
                 <div className="mb-6">
@@ -167,6 +167,24 @@ export default function HomePage() {
               <Button className="bg-[#E14A01] hover:bg-[#C75B01] text-white w-48 mt-auto rounded-full">Explore Opportunities</Button>
               </a>
             </Card>
+            <Card className="p-8 flex flex-col h-full justify-between">
+              <div>
+                <div className="mb-6">
+                  <img
+                    src="/hero-two.png"
+                    alt="Our Community"
+                    className="w-full h-48 object-cover rounded-3xl mb-4"
+                  />
+                </div>
+                <h3 className="text-xl font-bold">Our Conference</h3>
+                <p className="text-gray-600 pb-2">
+                Voice of Africa by Africans is a vision born out of a deep burden to see Africa rise into greatness led by informed minds and inspired hearts and THE AFRICA CONFERENCE 2026 themed, “ECHOES OF MOTHERLAND: RETELLING OUR OWN STORIES,”.
+                </p>
+              </div>
+              <a href="/register">
+              <Button className="bg-[#E14A01] hover:bg-[#C75B01] text-white w-48 mt-auto rounded-full">Register for Conference</Button>
+              </a>
+            </Card>
           </div>
         </div>
       </section>
@@ -174,7 +192,7 @@ export default function HomePage() {
       {/* Featured Voice Section */}
       <section className="bg-gray-50 text-black relative">
           <div>
-            <img style={{ objectPosition: 'center 30%' }} src="/Ibrahim-Traore.jpg" alt="Featured Voice" className="w-full h-[700px] object-cover" />
+            <img style={{ objectPosition: 'center 30%' }} src="/trailblazer2.jpg" alt="Featured Voice" className="w-full h-[700px] object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
             </div>
             

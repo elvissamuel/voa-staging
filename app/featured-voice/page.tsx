@@ -18,10 +18,10 @@ export default function FeaturedVoicePage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/Ibrahim-Traore.jpg"
-            alt="Ibrahim Traoré"
+            src="/trailblazer2.jpg"
+            alt="Alloysius Attah"
             className="w-full h-full object-cover"
-            style={{ objectPosition: 'center 20%' }}
+            style={{ objectPosition: 'center 30%' }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
         </div>
@@ -31,16 +31,16 @@ export default function FeaturedVoicePage() {
           <div className="max-w-4xl">
             <p className="text-[#E0B500] font-semibold text-sm mb-4">MEET OUR TRAILBLAZERS</p>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Captain Ibrahim Traoré
+              Alloysius Attah
             </h1>
             <p className="text-xl text-gray-200 mb-8 max-w-3xl">
-              Transitional President of Burkina Faso • Youngest Head of State in Africa • Champion of Pan-African Sovereignty
+              Co-Founder and CEO of Farmerline • Agritech Pioneer • Empowering 1.7 Million African Farmers
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
-              <span className="bg-[#E0B500] text-black px-3 py-1 rounded-full font-semibold">Born: 14 March 1988</span>
-              <span className="bg-[#E0B500] text-black px-3 py-1 rounded-full font-semibold">Kéra, Burkina Faso</span>
-              <span className="bg-[#E0B500] text-black px-3 py-1 rounded-full font-semibold">Geology Graduate</span>
-              <span className="bg-[#E0B500] text-black px-3 py-1 rounded-full font-semibold">Military Officer</span>
+              <span className="bg-[#E0B500] text-black px-3 py-1 rounded-full font-semibold">Born: 18th May</span>
+              <span className="bg-[#E0B500] text-black px-3 py-1 rounded-full font-semibold">Ghana</span>
+              <span className="bg-[#E0B500] text-black px-3 py-1 rounded-full font-semibold">CEO & Co-Founder</span>
+              <span className="bg-[#E0B500] text-black px-3 py-1 rounded-full font-semibold">20+ Years Farming Experience</span>
             </div>
           </div>
         </div>
@@ -53,10 +53,13 @@ export default function FeaturedVoicePage() {
             <h2 className="text-4xl font-bold text-[#053849] mb-8">Personal Biography</h2>
             <div className="prose prose-lg text-gray-700 leading-relaxed">
               <p className="text-lg mb-6">
-                Captain Ibrahim Traoré (born 14 March 1988 in Kéra, Bondokuy, Burkina Faso) is a Burkinabè military officer and the current Transitional President of Burkina Faso. A geology graduate from the University of Ouagadougou, he later trained at the Georges-Namoano Military Academy before joining the army.
+                Alloysius Attah leads Farmerline, which works with thousands of small-scale farmers in Ghana to increase access to agricultural information, productivity and income. At five years old, Alloysius' parents divorced so he moved to stay with his aunt, who was a small-scale farmer in rural Ghana. While staying there, he experienced the challenges small-scale farmers go through to produce food and support their families.
               </p>
               <p className="text-lg mb-6">
-                Rising through the ranks, Traoré led the September 2022 coup that brought him to power, becoming Africa's youngest head of state. Known for his pan-African, anti-colonial stance, he has positioned himself as a voice for sovereignty and security in Burkina Faso.
+                Upon making it to college, he became determined to give back to the people who supported him. This led him to start two companies, Alloyworld (a photography and video production startup) and iCottage Networks (Web and Mobile startup) in college. In 2013, Alloysius launched Farmerline with Emmanuel Owusu Addai to support small-scale farmers to increase their yield and income.
+              </p>
+              <p className="text-lg mb-6">
+                He is committed to empowering small-scale farmers like his aunt who are facing similar challenges across Africa. Alloysius spoke about his work at the Social Capital Markets Conference, 2013 and Mobile World Congress 2014. He is a winner of the World Bank and InfoDev mAgri challenge, World Summit Youth Award, Apps4Africa competitions, also CNBC Africa's Young Business Leader Award in 2017.
               </p>
             </div>
           </div>
@@ -74,19 +77,19 @@ export default function FeaturedVoicePage() {
                 <div className="space-y-3">
                   <div>
                     <span className="font-semibold text-gray-700">Full Name:</span>
-                    <span className="ml-2">Ibrahim Traoré</span>
+                    <span className="ml-2">Alloysius Attah</span>
                   </div>
                   <div>
                     <span className="font-semibold text-gray-700">Date of Birth:</span>
-                    <span className="ml-2">14 March 1988</span>
+                    <span className="ml-2">18th May</span>
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-700">Place of Origin:</span>
-                    <span className="ml-2">Kéra, Bondokuy, Burkina Faso</span>
+                    <span className="font-semibold text-gray-700">Country:</span>
+                    <span className="ml-2">Ghana</span>
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-700">Education:</span>
-                    <span className="ml-2">Bachelor of Science in Geology (2009)</span>
+                    <span className="font-semibold text-gray-700">Experience:</span>
+                    <span className="ml-2">Over 20 years' experience in farming</span>
                   </div>
                 </div>
               </Card>
@@ -96,19 +99,19 @@ export default function FeaturedVoicePage() {
                 <div className="space-y-3">
                   <div>
                     <span className="font-semibold text-gray-700">Title:</span>
-                    <span className="ml-2">Interim President of Burkina Faso</span>
+                    <span className="ml-2">Co-Founder and CEO of Farmerline</span>
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-700">In Office Since:</span>
-                    <span className="ml-2">October 2022</span>
+                    <span className="font-semibold text-gray-700">Startup Year:</span>
+                    <span className="ml-2">2013 - Present</span>
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-700">Movement:</span>
-                    <span className="ml-2">Patriotic Movement for Safeguard and Restoration (MPSR)</span>
+                    <span className="font-semibold text-gray-700">Organization Type:</span>
+                    <span className="ml-2">Non-Profit</span>
                   </div>
                   <div>
-                    <span className="font-semibold text-gray-700">Military Training:</span>
-                    <span className="ml-2">Georges-Namoano Military Academy</span>
+                    <span className="font-semibold text-gray-700">Awards:</span>
+                    <span className="ml-2">King Baudouin African Development Prize (2017)</span>
                   </div>
                 </div>
               </Card>
@@ -121,122 +124,108 @@ export default function FeaturedVoicePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-[#053849] mb-12 text-center">Achievements</h2>
+            <h2 className="text-4xl font-bold text-[#053849] mb-12 text-center">Impact & Achievements</h2>
             
             <div className="space-y-12">
-              {/* Security & Military Reform */}
+              {/* Why He Matters */}
               <Card className="p-8 bg-[#053849] text-white">
-                <h3 className="text-2xl font-bold mb-6 text-[#E0B500]">Security & Military Reform</h3>
+                <h3 className="text-2xl font-bold mb-6 text-[#E0B500]">Why He Matters</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <span className="text-[#E0B500] font-bold">•</span>
-                    <span>Expanded and empowered the Volunteers for the Defense of the Homeland (VDP), recruiting nearly 100,000 volunteers to support counter-terrorism operations.</span>
+                    <span>Raised in a rural farming community, Alloysius experienced the struggles of smallholder farmers firsthand.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#E0B500] font-bold">•</span>
-                    <span>Intensified aerial capabilities through drones (from Turkey and Russia), enhancing surveillance and response against jihadist groups.</span>
+                    <span>Today, he's helping over 1.7 million farmers thrive through access to real-time data, affordable inputs, and financial services.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#E0B500] font-bold">•</span>
+                    <span>He is redefining farming as a pathway to wealth, dignity, and resilience across Africa.</span>
                   </li>
                 </ul>
               </Card>
 
-              {/* Economic Sovereignty */}
+              {/* What Farmerline Does */}
               <Card className="p-8 bg-[#ECEDCE]">
-                <h3 className="text-2xl font-bold mb-6 text-[#053849]">Economic Sovereignty & Industry</h3>
+                <h3 className="text-2xl font-bold mb-6 text-[#053849]">What Farmerline Does</h3>
                 <ul className="space-y-4 text-gray-700">
                   <li className="flex items-start gap-3">
                     <span className="text-[#941232] font-bold">•</span>
-                    <span>Opened Burkina Faso's first gold refinery in 2024, producing refined gold locally.</span>
+                    <span>Delivers weather updates and market prices to farmers in real-time.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#941232] font-bold">•</span>
-                    <span>Nationalized major gold mines (Boungou and Wahgnion) for US$80 million, a significant reduction from the previously proposed price.</span>
+                    <span>Provides voice training in local languages for better accessibility.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#941232] font-bold">•</span>
-                    <span>Launched the Postal Bank of Burkina Faso (BPBF) with ~15 billion FCFA (~US$25 million), aiming to strengthen financial independence.</span>
+                    <span>Offers AI-powered farm support through mobile phones—even in remote areas.</span>
                   </li>
                 </ul>
               </Card>
 
-              {/* Agriculture & Food Security */}
+              {/* Impact Highlights */}
               <Card className="p-8 bg-white border-2 border-[#E0B500]">
-                <h3 className="text-2xl font-bold mb-6 text-[#053849]">Agriculture & Food Security</h3>
+                <h3 className="text-2xl font-bold mb-6 text-[#053849]">Impact Highlights</h3>
                 <ul className="space-y-4 text-gray-700">
                   <li className="flex items-start gap-3">
                     <span className="text-[#E0B500] font-bold">•</span>
-                    <span>Established first tomato-processing and additional cotton-processing plants, boosting local food and cash crop processing.</span>
+                    <span>Operating in 26 African countries, reaching farmers across the continent.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#E0B500] font-bold">•</span>
-                    <span>Massively supported farmers by distributing 400 tractors, 239 tillers, 710 motor pumps, 714 motorcycles, improved seeds, fertilizers, and inputs.</span>
+                    <span>Achieved yield increase of up to 50% for partnered farmers.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#E0B500] font-bold">•</span>
-                    <span>Dramatically increased crop yields: tomatoes from 315k to 360k tonnes; millet from 907k to 1.1M tonnes; rice from 280k to 326k tonnes (2022–2024).</span>
+                    <span>Empowering farmers to earn more and waste less through technology.</span>
                   </li>
                 </ul>
               </Card>
 
-              {/* Infrastructure & Connectivity */}
+              {/* Awards & Recognition */}
               <Card className="p-8 bg-[#053849] text-white">
-                <h3 className="text-2xl font-bold mb-6 text-[#E0B500]">Infrastructure & Connectivity</h3>
+                <h3 className="text-2xl font-bold mb-6 text-[#E0B500]">Awards & Recognition</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <span className="text-[#E0B500] font-bold">•</span>
-                    <span>Constructing the new Ouagadougou–Donsin Airport, to enhance national and regional connectivity, with a capacity for 1 million passengers.</span>
+                    <span>Winner of the World Bank and InfoDev mAgri challenge.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#E0B500] font-bold">•</span>
-                    <span>Expanded and modernized roads and airports, including Bobo-Dioulasso Airport, improving access and economic activity.</span>
+                    <span>World Summit Youth Award recipient.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#E0B500] font-bold">•</span>
-                    <span>New industrial projects: opened a cement plant (CISINOB SA), flour mill (220 tonnes/day), and pharmaceutical plant producing generics.</span>
+                    <span>CNBC Africa's Young Business Leader Award in 2017.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#E0B500] font-bold">•</span>
+                    <span>Laureate of the King Baudouin African Development Prize in 2017.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#E0B500] font-bold">•</span>
+                    <span>Farmerline won the FT/IFC Transformational Business Award for Achievement in Sustainable Agriculture in 2016.</span>
                   </li>
                 </ul>
               </Card>
 
-              {/* Cultural & Institutional Reform */}
+              {/* Why It Matters to Africa */}
               <Card className="p-8 bg-[#ECEDCE]">
-                <h3 className="text-2xl font-bold mb-6 text-[#053849]">Cultural & Institutional Reform</h3>
+                <h3 className="text-2xl font-bold mb-6 text-[#053849]">Why It Matters to Africa</h3>
                 <ul className="space-y-4 text-gray-700">
                   <li className="flex items-start gap-3">
                     <span className="text-[#941232] font-bold">•</span>
-                    <span>Promoted Burkinabé identity by banning colonial-era wigs and gowns in courts, replacing them with dressed in traditional Faso Dan Fani and locally woven fabrics.</span>
+                    <span>Agritech is the future of food security in Africa.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#941232] font-bold">•</span>
-                    <span>Built a mausoleum for Thomas Sankara, designed by Francis Kéré, and revitalized pan-African cultural platforms (like FESPACO), reinforcing national pride and continental identity.</span>
-                  </li>
-                </ul>
-              </Card>
-
-              {/* Economic & Fiscal Reforms */}
-              <Card className="p-8 bg-white border-2 border-[#941232]">
-                <h3 className="text-2xl font-bold mb-6 text-[#053849]">Economic & Fiscal Reforms</h3>
-                <ul className="space-y-4 text-gray-700">
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#941232] font-bold">•</span>
-                    <span>GDP rose from ~$18.8B to ~$22.1B since his takeover.</span>
+                    <span>Leaders like Alloysius are proving that innovation grows from the ground up.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#941232] font-bold">•</span>
-                    <span>Rejected IMF–World Bank aid, paid off local debts, reduced salaries for ministers/MPs by ~30% while increasing civil servant pay by ~50%.</span>
-                  </li>
-                </ul>
-              </Card>
-
-              {/* Regional Alliances & Diplomacy */}
-              <Card className="p-8 bg-[#053849] text-white">
-                <h3 className="text-2xl font-bold mb-6 text-[#E0B500]">Regional Alliances & Diplomacy</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#E0B500] font-bold">•</span>
-                    <span>Expelled French troops, recalibrated diplomatic relationships, and paved the way for alliances with Russia, Turkey, and regional partners.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#E0B500] font-bold">•</span>
-                    <span>Co-led the Alliance of Sahel States (AES) with Mali and Niger to foster regional defense, sovereignty</span>
+                    <span>Let's spotlight and support the changemakers feeding the continent.</span>
                   </li>
                 </ul>
               </Card>
@@ -258,14 +247,14 @@ export default function FeaturedVoicePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-8">Legacy and Vision</h2>
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-              Ibrahim Traoré's legacy is shaping up as that of a young, fearless leader who champions sovereignty, economic self-reliance, and cultural pride, while his vision is to build a secure, self-sufficient, and united Burkina Faso that stands as a pillar of Pan-African solidarity.
+              Alloysius Attah's legacy is that of a visionary leader who transformed agricultural challenges into technological solutions, empowering millions of African farmers. His vision continues to redefine farming as a pathway to wealth, dignity, and resilience across the continent.
             </p>
             
             <div className="bg-[#E0B500] text-black p-8 rounded-2xl max-w-4xl mx-auto">
               <blockquote className="text-2xl font-bold italic leading-relaxed">
-                "I don't want my people to relocate to foreign countries in search of greener pastures, Africa is the richest continent in the world, just that we fail to exploit our resources."
+                "Technology is not just for Silicon Valley. It's for the soil, the market, and the everyday African farmer."
               </blockquote>
-              <p className="text-lg font-semibold mt-4">– Ibrahim Traoré</p>
+              <p className="text-lg font-semibold mt-4">– Alloysius Attah</p>
             </div>
           </div>
         </div>
@@ -275,8 +264,8 @@ export default function FeaturedVoicePage() {
       <section className="py-20 bg-[#053849] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Join the Voice of Africa Movement</h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-            Be part of the movement that amplifies African voices and tells our authentic stories. Connect with trailblazers like Ibrahim Traoré and contribute to reshaping the African narrative.
+          <p className="text-xl text-gray-200 mb-8 max-w-4xl mx-auto">
+            Voice of Africa by Africans is a vision born out of a deep burden to see Africa rise into greatness led by informed minds and inspired hearts. Join us at THE AFRICA CONFERENCE 2025 themed, "ECHOES OF MOTHERLAND: RETELLING OUR OWN STORIES," bringing together African thought leaders, innovators, civil society groups, policy makers, creatives, and change-makers from across the continent and the diaspora to reshape Africa's narrative and drive sustainable growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://whatsapp.com/channel/0029VbAdeLl5EjxxhXZaxu2n" target="_blank" rel="noopener noreferrer">
@@ -284,13 +273,13 @@ export default function FeaturedVoicePage() {
                 Join Our Community
               </Button>
             </a>
-            {/* <Button 
-              onClick={() => router.push('/')}
+            <Button 
+              onClick={() => router.push('/register')}
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg rounded-full"
+              className="border-white text-black hover:bg-white hover:text-black px-8 py-4 text-lg rounded-full"
             >
-              Explore More Voices
-            </Button> */}
+              Register for Conference
+            </Button>
           </div>
         </div>
       </section>

@@ -57,7 +57,7 @@ export default function Step3Background({ formData, errors, onChange, onArrayCha
           {sectors.map((sector) => (
             <div key={sector} className="flex items-center space-x-2">
               <Checkbox id={`sector-${sector}`} checked={formData.sector.includes(sector)} onCheckedChange={(checked) => onArrayChange('sector', sector, checked as boolean)} />
-              <Label htmlFor={`sector-${sector}`} className="text-lg">{sector}</Label>
+              <Label htmlFor={`sector-${sector}`} className="text-base">{sector}</Label>
             </div>
           ))}
         </div>
@@ -70,7 +70,7 @@ export default function Step3Background({ formData, errors, onChange, onArrayCha
           {interests.map((area) => (
             <div key={area} className="flex items-center space-x-2">
               <Checkbox id={`interest-${area}`} checked={formData.areasOfInterest.includes(area)} onCheckedChange={(checked) => onArrayChange('areasOfInterest', area, checked as boolean)} />
-              <Label htmlFor={`interest-${area}`} className="text-lg">{area}</Label>
+              <Label htmlFor={`interest-${area}`} className="text-base">{area}</Label>
             </div>
           ))}
         </div>
@@ -83,7 +83,7 @@ export default function Step3Background({ formData, errors, onChange, onArrayCha
           {languages.map((language) => (
             <div key={language} className="flex items-center space-x-2">
               <Checkbox id={`language-${language}`} checked={formData.languagesSpoken.includes(language)} onCheckedChange={(checked) => onArrayChange('languagesSpoken', language, checked as boolean)} />
-              <Label htmlFor={`language-${language}`} className="text-lg">{language}</Label>
+              <Label htmlFor={`language-${language}`} className="text-base">{language}</Label>
             </div>
           ))}
         </div>
